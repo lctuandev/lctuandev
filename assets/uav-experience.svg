@@ -1,0 +1,73 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="uavBg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.5" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#082F49"/>
+    </linearGradient>
+    <radialGradient id="radarGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 180) rotate(90) scale(190)">
+      <stop stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#38BDF8" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <g id="drone">
+      <circle cx="0" cy="0" r="5" fill="#E0F2FE"/>
+      <path d="M-24 -14 L-7 -4 M7 -4 L24 -14 M-24 14 L-7 4 M7 4 L24 14" stroke="#BAE6FD" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="-29" cy="-17" r="10" stroke="#22D3EE" stroke-width="2" fill="none"/>
+      <circle cx="29" cy="-17" r="10" stroke="#22D3EE" stroke-width="2" fill="none"/>
+      <circle cx="-29" cy="17" r="10" stroke="#22D3EE" stroke-width="2" fill="none"/>
+      <circle cx="29" cy="17" r="10" stroke="#22D3EE" stroke-width="2" fill="none"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="360" rx="26" fill="url(#uavBg)"/>
+  <rect width="1200" height="360" rx="26" fill="url(#grid)"/>
+  <rect width="1200" height="360" rx="26" fill="url(#radarGlow)"/>
+
+  <g opacity="0.45">
+    <circle cx="930" cy="180" r="55" stroke="#38BDF8"/>
+    <circle cx="930" cy="180" r="105" stroke="#38BDF8"/>
+    <circle cx="930" cy="180" r="155" stroke="#38BDF8"/>
+    <path d="M930 25V335M775 180H1085" stroke="#38BDF8"/>
+    <line x1="930" y1="180" x2="1065" y2="104" stroke="#22D3EE" stroke-width="3" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0 930 180" to="360 930 180" dur="5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <g filter="url(#glow)">
+    <use href="#drone" transform="translate(930 72) scale(.75)">
+      <animateTransform attributeName="transform" type="rotate" from="0 930 180" to="360 930 180" dur="9s" repeatCount="indefinite" additive="sum"/>
+    </use>
+    <use href="#drone" transform="translate(1045 190) scale(.55)">
+      <animateTransform attributeName="transform" type="rotate" from="360 930 180" to="0 930 180" dur="12s" repeatCount="indefinite" additive="sum"/>
+    </use>
+    <use href="#drone" transform="translate(840 260) scale(.5)">
+      <animateTransform attributeName="transform" type="rotate" from="0 930 180" to="360 930 180" dur="14s" repeatCount="indefinite" additive="sum"/>
+    </use>
+  </g>
+
+  <g transform="translate(70 62)">
+    <text x="0" y="0" fill="#67E8F9" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">EXPERIENCE / UAV SYSTEMS</text>
+    <text x="0" y="52" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="800">CT UAV</text>
+    <text x="0" y="88" fill="#BAE6FD" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600">Frontend Mobile Developer · Dec 2025 - Present</text>
+    <text x="0" y="137" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="20">Built a mobile Ground Control Station for UAV control, telemetry streaming,</text>
+    <text x="0" y="168" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="20">flight mode switching, takeoff command, parameter configuration, and alerts.</text>
+    <g transform="translate(0 215)">
+      <rect width="115" height="34" rx="17" fill="#0EA5E9" fill-opacity="0.18" stroke="#38BDF8"/>
+      <text x="20" y="23" fill="#E0F2FE" font-family="Segoe UI, Arial" font-size="14" font-weight="700">MAVLink</text>
+      <rect x="130" width="150" height="34" rx="17" fill="#0EA5E9" fill-opacity="0.18" stroke="#38BDF8"/>
+      <text x="150" y="23" fill="#E0F2FE" font-family="Segoe UI, Arial" font-size="14" font-weight="700">React Native</text>
+      <rect x="295" width="125" height="34" rx="17" fill="#0EA5E9" fill-opacity="0.18" stroke="#38BDF8"/>
+      <text x="315" y="23" fill="#E0F2FE" font-family="Segoe UI, Arial" font-size="14" font-weight="700">Telemetry</text>
+      <rect x="435" width="125" height="34" rx="17" fill="#0EA5E9" fill-opacity="0.18" stroke="#38BDF8"/>
+      <text x="455" y="23" fill="#E0F2FE" font-family="Segoe UI, Arial" font-size="14" font-weight="700">Realtime</text>
+    </g>
+  </g>
+
+  <path d="M70 316 C170 285, 260 335, 360 304 S560 294, 660 314" stroke="#22D3EE" stroke-width="3" fill="none" opacity="0.85">
+    <animate attributeName="d" dur="3s" repeatCount="indefinite" values="M70 316 C170 285, 260 335, 360 304 S560 294, 660 314;M70 304 C170 340, 260 285, 360 320 S560 335, 660 295;M70 316 C170 285, 260 335, 360 304 S560 294, 660 314"/>
+  </path>
+</svg>
