@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=lctuan-duck&label=Profile%20views&color=0ea5e9&style=flat" />
+  <img src="https://komarev.com/ghpvc/?username=lctuandev&label=Profile%20views&color=0ea5e9&style=flat" />
 </p>
 
 ---
@@ -78,8 +78,8 @@ An AI-powered IELTS Speaking practice app with pronunciation feedback, mock test
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=lctuan-duck&show_icons=true&theme=tokyonight&hide_border=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lctuan-duck&layout=compact&theme=tokyonight&hide_border=true" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api?username=lctuandev&show_icons=true&theme=tokyonight&hide_border=true" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lctuandev&layout=compact&theme=tokyonight&hide_border=true" height="170" />
 </p>
 
 ---
@@ -87,4 +87,4 @@ An AI-powered IELTS Speaking practice app with pronunciation feedback, mock test
 ## 📫 Contact
 
 - Email: **lctuan.dev@gmail.com**
-- GitHub: **github.com/lctuan-duck**
+- GitHub: **github.com/lctuandev**
